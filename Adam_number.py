@@ -21,4 +21,3 @@ if adam(k):
     print("True")
 else:
     print("False")
-    
