@@ -1,6 +1,3 @@
-n=input()
-c=0
-for i in range(len(n)):
-    if n[i]==chr(32):
-        c=c+1
-print(c)
+s=input()
+l=s.split(" ")
+print(len(l)-1)
