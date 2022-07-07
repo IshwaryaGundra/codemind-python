@@ -1,7 +1,4 @@
 s=input()
-x=s.split()
-k=[]
-for i in x:
-    k.append(len(i))
-print(*k)
-    
+l=s.split(" ")
+for i in l:
+    print(len(i),end=" ")
