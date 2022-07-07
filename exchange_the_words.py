@@ -1,6 +1,4 @@
-n=input()
-x=n.split()
-for i in x:
-    s=x[::-1]
-print(*s)
-    
+s = input()
+s = s.split(" ")
+for i in range(len(s)-1,-1,-1):
+    print(s[i],end=" ")
