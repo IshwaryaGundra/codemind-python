@@ -1,10 +1,7 @@
 s=input()
-def isisogram(s):
-    if len(s)==len(set(s)):
-        return 1
-    else:
-        return 0
-if isisogram(s):
-    print("True")
+for i in s:
+    if s.count(i)>1:
+        print(False)
+        break
 else:
-    print("False")
+    print(True)
