@@ -1,11 +1,11 @@
-n=input()
-k=n.split()
-c=0
-m=[]
-for i in k:
-    c=0
-    for j in i:
-        if j in "aeiou":
-            c=c+1
-    m.append(c)
-print(max(m))
+s = input().lower()
+s = s.split(' ')
+m = 0
+for i in range(len(s)):
+    d = 0
+    for j in s[i]:
+        if j in 'aeiou':
+            d+=1
+    if d>m:
+        m=d
+print(m)
