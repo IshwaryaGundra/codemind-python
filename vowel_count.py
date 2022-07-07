@@ -1,6 +1,7 @@
-n=(input())
+s=input()
+v="aeiouAEIOU"
 c=0
-for i in range(len(n)):
-    if n[i] in 'aeiouAEIOU':
-        c=c+1
+for i in range(len(s)):
+    if s[i] in v:
+        c+=1
 print(c)
