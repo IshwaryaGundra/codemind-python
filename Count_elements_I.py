@@ -1,10 +1,11 @@
 a,b=map(int,input().split())
 x=list(map(int,input().split()))
 y=list(map(int,input().split()))
-c=0
-for i in set(x):
-    if i in set(y):
-        c=c+1
-    
-print(c)
-    
+c=set(x)
+d=set(y)
+count=0
+for i in c:
+    for j in d:
+        if i==j:
+            count+=1
+print(count)
