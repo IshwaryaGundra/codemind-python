@@ -1,12 +1,11 @@
 a,b=map(int,input().split())
-x=list(map(int,input().split()))
-y=list(map(int,input().split()))
-k=[]
-for i in range(len(x)):
-    if x[i] not in y:
-        k.append(x[i])
-for j in range(len(y)):
-    if y[j] not in x:
-        k.append(y[j])
-print(*k)
-    
+m=list(map(int,input().split()))
+n=list(map(int,input().split()))
+d=[]
+for i in m:
+    if i not in n and i not in d:
+        d.append(i)
+for i in n:
+    if i not in m and i not in d:
+        d.append(i)
+print(*d)
