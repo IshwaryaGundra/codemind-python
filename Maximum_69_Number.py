@@ -1,11 +1,15 @@
-n=list(input())
-t=n
-l=[]
-l.append("".join(n))
-for i in range(len(n)):
-    n=t
-    if(n[i]=='6'):
-        n[i]='9'
-        l.append("".join(n))
+x=int(input())
+a=[]
+k=0
+while x:
+    d=x%10
+    x=x//10
+    a.append(d)
+a=a[::-1]
+for i in range(len(a)):
+    if a[i]==6:
+        a[i]=9
         break
-print(int(max(l)))
+for i in range(len(a)):
+    k=k*10+a[i]
+print(k)
